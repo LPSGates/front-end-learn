@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript基本语法</title>
+</head>
+<body>
+    <script>
+        var x;
+        let y = 5;
+        const PI = 3.14;
+        console.log(x,y,PI);
+        let name = ('富贵');
+        let none = null;
+        console.log(name,none)
+
+        let age = 19;
+        if (age > 18) {
+            console.log('您成年了!!');
+        }else {
+            console.log('你是未成年~')
+        }
+
+        let time = 18;
+        if (time < 12) {
+            alert('早上好');
+        }else if (21 > time > 12) {
+            alert('下午好');
+        }else if(time = 12) {
+            alert('中午好');
+        }else {
+            alert('晚上好');
+        }
+
+        // for循环
+        console.log('for循环表达式:');
+        for (let i = 1;i < 11;i += 1) {
+            console.log(i);
+        }
+        // wihle循环
+        console.log('while循环');
+        let count = 1
+        while (count <= 10) {
+            console.log(count);
+            count += 1;
+        }
+
+        // 循环关键字
+        console.log('循环关键字');
+        for (var i = 0;i < 5;i += 1) {
+            if (i == 2) {
+                continue;
+            }
+            if (i == 4) {
+                break;
+            }
+            console.log(i);
+        }
+        
+    </script>
+    
+</body>
+</html>

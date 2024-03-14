@@ -1,0 +1,39 @@
+.box1 {
+    height: 350px;
+    background-color: aqua;
+    border: 10px solid black;
+}
+.box-normal {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
+.box-relative {
+    width: 100px;
+    height: 100px;
+    background-color: yellowgreen;
+    position: relative;
+    left: 120px;
+    top: 40px;
+}
+.box2 {
+    height: 350px;
+    background-color: yellowgreen;
+    border: 10px solid black;
+    margin-bottom: 300px;
+}
+.box-absloute {
+    width: 100px;
+    height: 100px;
+    background-color: lightpink;
+    position: absolute;
+    left: 120px;
+}
+.box-fixed {
+    width: 100px;
+    height: 100px;
+    background-color: chocolate;
+    position: fixed;
+    right: 0;
+    top: 300px;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css选择器</title>
+    <style>
+        /* 元素选择器 */
+        h2 {
+            color: red;
+        }
+        /* 类选择器 */
+        .min {
+            background-color: rgb(203, 84, 124) ;
+        }
+        /* id选择器 */
+        #rund {
+            font-size: large;
+        }
+        /* 通用选择器 */
+        * {
+            font-family: 'KaiTi';
+        }
+        /* 子元素选择器 */
+        .father > .son{
+            background-color:darkgray;
+        }
+        /* 后代选择器 */
+        .father p{
+            color: #567;
+            font-size: larger;
+        }
+        /* 兄弟选择器 */
+        h3 + p{
+            background-color: red;
+        }
+        /* 伪类选择器 */
+        #apple:hover {
+            color: brown;
+        }
+        /* 
+        选中第一个子元素:first-child
+                        :nth-child()
+                        :active
+         */
+
+         /* 伪元素选择器
+            ::after
+            ::before
+          */
+    </style>
+</head>
+<body>
+    <h1>不同的css选择器</h1>
+    
+    <h2>这是一个元素选择器</h2>
+    <h3 class="min">这是一个类选择器</h3>
+    <h4 id="rund">这是一个ID选择器</h4>
+    <div class="father">
+        <h4 class="son">这是个子代</h4>
+        <p class="son">这也是个子代</p>
+        <div>
+            <p class="grandson">后代示例</p>
+            
+        </div>
+    </div>
+    <p>这是个普通的p标签</p>
+    <h3>普通的h2标签</h3>
+    <p>这还是个普通的p标签</p>
+
+    <h3 id="apple">这是一个伪类选择器</h3>
+</body>
+</html>
